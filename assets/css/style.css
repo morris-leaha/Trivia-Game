@@ -1,0 +1,47 @@
+body {
+    background: #ffffff;
+    background-image: url("../images/vintage-concrete.png");
+}
+
+header {
+    margin-bottom: 4rem;
+}
+
+.card-img-overlay {
+    top: auto;
+    text-shadow: 3px 2px 8px black;
+}
+
+.card-title1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.card-title2 {
+    font-family: 'Libre Baskerville', serif;
+    
+}
+
+@media screen and (max-width: 991px) {
+    .card-img-overlay {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* .card-img-overlay {
+        padding-bottom: 0;
+    } */
+}
+
+
+
