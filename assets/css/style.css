@@ -36,6 +36,18 @@ header {
     margin: 0.5rem 0 2.5rem 4rem;
 }
 
+.btn {
+    box-shadow: 4px 4px 6px 0 rgba(0,0,0,0.24);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
 footer {
     margin-top: 4rem;
 }
