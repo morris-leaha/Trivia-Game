@@ -5,6 +5,7 @@ body {
 
 header {
     margin-bottom: 4rem;
+    box-shadow: 2px 2px 20px #000000d9;
 }
 
 .card-img-overlay {
@@ -23,6 +24,18 @@ header {
     
 }
 
+.card {
+    margin-bottom: 2rem;
+}
+
+.form-check {
+    margin: 0.5rem 0 1rem 4rem;
+}
+
+.form-check:last-child {
+    margin: 0.5rem 0 2.5rem 4rem;
+}
+
 @media screen and (max-width: 991px) {
     .card-img-overlay {
         padding-bottom: 0;
@@ -30,18 +43,43 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-    h1 {
-        font-size: 1.8rem;
+    .card-title1 {
+        font-size: 2.5rem;
     }
 
-    h2 {
-        font-size: 1.5rem;
+    .card-title2 {
+        font-size: 1.65rem;
     }
-    
-    /* .card-img-overlay {
-        padding-bottom: 0;
-    } */
 }
 
+@media screen and (max-width: 508px) {
+    .card-title1 {
+        font-size: 2.25rem;
+    }
 
+    .card-title2 {
+        font-size: 1.35rem;
+    }
+}
 
+@media screen and (max-width: 464px) {
+    .card-title1 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .card-title2 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card-title1 {
+        font-size: 1.75rem;
+        margin-bottom: 0;
+    }
+
+    .card-title2 {
+        font-size: 0.75rem;
+    }
+}
