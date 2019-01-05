@@ -36,6 +36,10 @@ header {
     margin: 0.5rem 0 2.5rem 4rem;
 }
 
+footer {
+    margin-top: 4rem;
+}
+
 @media screen and (max-width: 991px) {
     .card-img-overlay {
         padding-bottom: 0;
