@@ -17,15 +17,22 @@ header {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
     font-weight: bold;
+    color: rgb(255, 249, 236);
 }
 
 .card-title2 {
     font-family: 'Libre Baskerville', serif;
-    
+    color: rgb(255, 249, 236);
 }
 
 .card {
     margin-bottom: 2rem;
+    background-color: rgb(255, 249, 236);
+    color: rgb(73, 65, 54);
+}
+
+.card-header {
+    color: rgb(104, 93, 76,0.85);
 }
 
 .form-check {
