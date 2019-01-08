@@ -17,7 +17,7 @@
 <div class="container" id="main-container">
 
     <header>
-        <div class="card text-white">
+        <div class="card text-white" id="header">
                 <img class="card-img" src="assets/images/grapevine.jpg" alt="grapes on grapevine">
                 <div class="card-img-overlay text-right">
                   <h1 class="card-title1">The Wondrous World of Wine</h1>
@@ -26,7 +26,43 @@
               </div>
     </header>
 
-    <section class="main-section">
+    <section class="start-game" id="start">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Introduction:</h5>
+                        <p>This fun trivia game was designed to be a beginner level quiz that will test your basic knowledge in the wondrous world of wine.</p>
+                        <h5>Intructions:</h5>
+                        <ul>
+                            <li><p>There are 10 questions</p></li>
+                            <li><p>You will get 2 minutes to answer all 10 questions</p></li>
+                                <ul>
+                                    <li><p>If you do not answer all the questions within the time allotted, the quiz will stop and you will be shown:
+                                        <ol>
+                                            <li><p>The number of correct answers</p></li>
+                                            <li><p>The number of incorrect answers</p></li>
+                                            <li><p>The number of unanswered questions</p></li>
+                                        </ol>
+                                </ul>
+                                <ul>
+                                    <li><p>If you answer all the questions within the time allotted, press the submit button to reveal:</p></li>
+                                        <ol>
+                                            <li><p>The number of correct answers</p></li>
+                                            <li><p>The number of incorrect answers</p></li>
+                                            <li><p>The number of unanswered questions</p></li>
+                                        </ol>
+                                </ul>
+                            <li><p>Press the start button below when you're ready to begin!</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-secondary btn-block" id="start">Start</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="main-section" id="questions">
         <div class="row">
             <div class="col">
                 <div class="card">
@@ -384,7 +420,7 @@
                 <input class="btn btn-secondary" type="submit" value="Submit">
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer class="footer">
         <div class="container text-center">
