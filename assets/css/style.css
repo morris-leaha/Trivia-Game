@@ -25,6 +25,10 @@ header {
     color: rgb(255, 249, 236);
 }
 
+.timer {
+    margin-bottom: 2rem;
+}
+
 .card {
     margin-bottom: 2rem;
     background-color: rgb(255, 249, 236);
