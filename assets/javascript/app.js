@@ -1,5 +1,7 @@
 window.onload = function() {
     $("#questions").hide();
+    $("#user-report-notsubmitted").hide();
+    $("#user-report-submitted").hide();
     $("#start").on("click",start);
 };
 
