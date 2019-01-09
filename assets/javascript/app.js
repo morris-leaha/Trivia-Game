@@ -6,7 +6,7 @@ window.onload = function() {
 };
 
 var intervalId;
-var number = 10;
+var time = 120;
 var clockRunning = false;
 
 function start() {
@@ -16,17 +16,36 @@ function start() {
 }
 
 function decrement() {
-    number--;
-    $("#time-display").html(number);
+    time--;
+    var converted = timeConverter(time);
+    $("#time-display").html(converted);
 
     if (number === 0) {
         stop();
+        $("#user-report-notsubmitted").show();
+        $("#questions").hide();
     }
 }
 
 function stop() {
     clearInterval(intervalId);
-    $("#user-report-notsubmitted").show();
-    $("#questions").hide();
-    $("#instructions").hide();
+}
+
+function timeConverter(t) {
+    var minutes = Math.floor(t / 60);
+    var seconds = t - (minutes * 60);
+
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+
+    if (minutes === 0) {
+        minutes = "0";
+    }
+
+    else if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+
+    return minutes + ":" + seconds;
 }
