@@ -1,5 +1,6 @@
 window.onload = function() {
     $("#questions").hide();
+    $(".timer").html("Time Remaining: " + " 02:00");
     $("#user-report-notsubmitted").hide();
     $("#user-report-submitted").hide();
     $("#start").on("click",start);
@@ -7,7 +8,6 @@ window.onload = function() {
 
 var intervalId;
 var time = 120;
-var clockRunning = false;
 
 function start() {
     $("#questions").show();
@@ -18,9 +18,9 @@ function start() {
 function decrement() {
     time--;
     var converted = timeConverter(time);
-    $("#time-display").html(converted);
+    $(".timer").html("Time Remaining: " + converted);
 
-    if (number === 0) {
+    if (time === 0) {
         stop();
         $("#user-report-notsubmitted").show();
         $("#questions").hide();
