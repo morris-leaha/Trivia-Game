@@ -1,9 +1,9 @@
 window.onload = function() {
     $("#questions").hide();
     $(".timer").html("Time Remaining: " + " 02:00");
-    $("#user-report-notsubmitted").hide();
-    $("#user-report-submitted").hide();
+    $(".user-info").hide();
     $("#start").on("click",start);
+    $("#submit").on("click",run);
 };
 
 var intervalId;
@@ -48,4 +48,10 @@ function timeConverter(t) {
     }
 
     return minutes + ":" + seconds;
+}
+
+function run() {
+    clearInterval(intervalId);
+    $("#questions").hide();
+    $("#user-report-submitted").show();
 }
