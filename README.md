@@ -1,5 +1,5 @@
 # Trivia-Game
- A trivia game using JavaScript for the logic and jQuery to manipulate HTML
+ A beginner level trivia game on wine using JavaScript for the logic and jQuery to manipulate HTML
 
  ## How to Play
 
@@ -11,6 +11,6 @@
 * You will get 2 minutes to answer all 10 questions
     * If you do not answer all the questions within the time allotted, the quiz will stop automatically and reveal your results
     * If you do answer all the questions within the time allotted, press the submit button to reveal your results
-    
+
 ## How the Game Works
 * This game was built utilizing HTML, CSS, and JavaScript for the logic and jQuery to manipulate HTML.
