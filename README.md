@@ -1,5 +1,5 @@
 # Trivia-Game
- A beginner level trivia game on wine using JavaScript for the logic and jQuery to manipulate HTML
+ This trivia game was designed to be an entry level, quick, quiz that will test your fundamental wine knowledge!
 
  ## How to Play
 
