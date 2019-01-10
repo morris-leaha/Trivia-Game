@@ -1,7 +1,7 @@
 window.onload = function() {
     $("#questions").hide();
     $(".timer").html("Time Remaining: " + " 02:00");
-    $(".user-info").hide();
+    $("#user-report").hide();
     $("#start").on("click",start);
     $("#submit").on("click",report);
 };
@@ -54,6 +54,16 @@ function report() {
     clearInterval(intervalId);
     $("#questions").hide();
     $("#user-report").show();
+    
+    if (correct === 10) {
+        $("#msg").html("Perfect Score -- You must be a wine connoisseur!");
+    } else if (correct < 10 && correct >= 6) {
+        $("#msg").html("Nicely Done -- Try Again?");
+    } else if (correct < 6 && correct >= 1) {
+        $("#msg").html("Better Luck Next Time -- Try Again?");
+    } else {
+        $("#msg").html("Wah, Wah, Wah... -- Try Again?");
+    }
 }
 
     var correct = 0;

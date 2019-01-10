@@ -437,29 +437,34 @@
         </div>
     </section>
 
-    <section class="user-info" id="user-report">
+    <section id="user-report">
         <div class="row">
             <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <table class="table table-borderless">
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Correct # of Answers:</th>
-                                    <td id="correct"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Incorrect # of Answers:</th>
-                                    <td id="incorrect"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Unanswered # of Questions:</th>
-                                    <td id="unanswered"></td>
-                                </tr>
-                            </tbody> 
-                        </table>
-                        <div>
-                            <p id="msg"></p>
+                <div class="card-group">
+                    <div class="card user-info">
+                        <div class="card-body">
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Correct # of Answers:</th>
+                                        <td id="correct"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Incorrect # of Answers:</th>
+                                        <td id="incorrect"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Unanswered # of Questions:</th>
+                                        <td id="unanswered"></td>
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>
+                    </div>
+                
+                    <div class="card text-center user-info">
+                        <div class="card-body">
+                            <span id="msg" class="align-middle report-msg"></span>   
                         </div>
                     </div>
                 </div>
