@@ -42,7 +42,7 @@ h4 {
     margin-bottom: 0.85rem;
 }
 
-.card {
+.card, .card-group {
     margin-bottom: 2rem;
     background-color: rgb(255, 249, 236);
     color: rgb(73, 65, 54);
