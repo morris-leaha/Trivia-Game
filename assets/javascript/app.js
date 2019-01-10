@@ -47,15 +47,16 @@ function timeConverter(t) {
 
 function report() {
     clearInterval(intervalId);
+    // checkAnswer();
     $("#questions").hide();
     $("#user-report").show();
     
     if (correct === 10) {
         $("#msg").html("Perfect Score -- You must be a wine connoisseur!");
     } else if (correct < 10 && correct >= 6) {
-        $("#msg").html("Nicely Done -- Try Again?");
+        $("#msg").html("Nicely Done! You must be a wine lover! -- Try Again?");
     } else if (correct < 6 && correct >= 1) {
-        $("#msg").html("Better Luck Next Time -- Try Again?");
+        $("#msg").html("Better Luck Next Time! -- Try Again?");
     } else {
         $("#msg").html("Wah, Wah, Wah... -- Try Again?");
     }
@@ -65,6 +66,39 @@ function report() {
     var incorrect = 0;
     var unanswered = 0;
 
+// function checkAnswer(q, a){
+//     var userAnswer = $("input[name=question" + q + "Radios]:checked", "#q-" + q).val(); 
+//         console.log("user answer= " + userAnswer);
+//     var q = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+//     var a = ["option1a", 
+//              "option2d", 
+//              "option3c", 
+//              "option4d", 
+//              "option5b", 
+//              "option6c", 
+//              "option7a", 
+//              "option8c", 
+//              "option9d", 
+//              "option10b"];
+
+//     for (var i = 0; a.length < 1; i++) {
+//         if (userAnswer === a) {
+//             correct++;
+//             console.log("# correct " + correct); 
+//             $("#correct").html(correct);
+//             $("#incorrect").html(incorrect);
+//             unanswered--;
+//             $("#unanswered").html(unanswered);
+//         } else {
+//             incorrect++;
+//             console.log("# incorrect " + incorrect);
+//             $("#correct").html(correct);
+//             $("#incorrect").html(incorrect);
+//             unanswered--;
+//             $("#unanswered").html(unanswered);
+//             }
+//         }
+//     }
 
     $('#q-1 input').on('change', function() {
         var q1 = $('input[name=question1Radios]:checked', '#q-1').val(); 
