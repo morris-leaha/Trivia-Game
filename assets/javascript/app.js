@@ -22,14 +22,8 @@ function decrement() {
     $(".timer").html("Time Remaining: " + converted);
 
     if (time === 0) {
-        stop();
-        $("#user-report").show();
-        $("#questions").hide();
+        report();
     }
-}
-
-function stop() {
-    clearInterval(intervalId);
 }
 
 function timeConverter(t) {
@@ -365,15 +359,16 @@ if ("#q-10 input" === "question10a" || "question10b" || "question10c" || "questi
 }
 
 
-// function reset() {
-//     correct = 0;
-//     incorrect = 0;
-//     unanswered = 0;
+function reset() {
+    correct = 0;
+    incorrect = 0;
+    unanswered = 10;
     
+    $("#questions").hide();
+    $("#user-report").hide();
+    $("#instructions").show();
+    $(".timer").html("Time Remaining: " + " 02:00");
 
-
-//     $("#questions").hide();
-//     $("#user-report").hide();
-//     $("#instructions").show();
-//     $(".timer").html("Time Remaining: " + " 02:00");
-// }
+    //function to uncheck radio buttons
+    $('#questions').find("input:radio:checked").prop('checked', false);
+}
