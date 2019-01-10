@@ -7,7 +7,7 @@ window.onload = function() {
 };
 
 var intervalId;
-var time = 120;
+var time = 10;
 
 function start() {
     $("#questions").show();
@@ -22,7 +22,7 @@ function decrement() {
 
     if (time === 0) {
         stop();
-        $("#user-report-notsubmitted").show();
+        $("#user-report").show();
         $("#questions").hide();
     }
 }
@@ -53,12 +53,7 @@ function timeConverter(t) {
 function report() {
     clearInterval(intervalId);
     $("#questions").hide();
-    $("#user-report-submitted").show();
-
-    if (correct >= 7){
-        var msgDIV = $("<div class='card-text'>");
-
-    }
+    $("#user-report").show();
 }
 
     var correct = 0;
@@ -73,14 +68,18 @@ function report() {
         if (q1 === "option1a") {
             correct++;
             console.log("# correct " + correct); 
-            $("#correct-submitted").html(correct);
-            $("#incorrect-submitted").html(incorrect);
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
         } else {
             incorrect++;
             console.log("# incorrect " + incorrect);
-            $("#incorrect-submitted").html(incorrect);
-            $("#correct-submitted").html(correct);
-    }
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
+        }
  });
 
     $('#q-2 input').on('change', function() {
@@ -90,14 +89,19 @@ function report() {
         if (q2 === "option2d") {
             correct++;
             console.log("# correct " + correct); 
-            $("#correct-submitted").html(correct);
-            $("#incorrect-submitted").html(incorrect);
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
         } else {
             incorrect++;
             console.log("# incorrect " + incorrect);
-            $("#incorrect-submitted").html(incorrect);
-            $("#correct-submitted").html(correct);
-    }
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
+        }
+    
  });
 
     $('#q-3 input').on('change', function() {
@@ -107,14 +111,19 @@ function report() {
         if (q3 === "option3c") {
             correct++;
             console.log("# correct " + correct); 
-            $("#correct-submitted").html(correct);
-            $("#incorrect-submitted").html(incorrect);
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
         } else {
             incorrect++;
             console.log("# incorrect " + incorrect);
-            $("#incorrect-submitted").html(incorrect);
-            $("#correct-submitted").html(correct);
-}
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
+        }
+
 });
 
     $('#q-4 input').on('change', function() {
@@ -124,14 +133,18 @@ function report() {
         if (q4 === "option4d") {
             correct++;
             console.log("# correct " + correct); 
-            $("#correct-submitted").html(correct);
-            $("#incorrect-submitted").html(incorrect);
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
         } else {
             incorrect++;
             console.log("# incorrect " + incorrect);
-            $("#incorrect-submitted").html(incorrect);
-            $("#correct-submitted").html(correct);
-}
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
+        }
 });
 
     $('#q-5 input').on('change', function() {
@@ -141,14 +154,18 @@ function report() {
         if (q5 === "option5b") {
             correct++;
             console.log("# correct " + correct); 
-            $("#correct-submitted").html(correct);
-            $("#incorrect-submitted").html(incorrect);
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
         } else {
             incorrect++;
             console.log("# incorrect " + incorrect);
-            $("#incorrect-submitted").html(incorrect);
-            $("#correct-submitted").html(correct);
-    }
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
+        }
  });
 
     $('#q-6 input').on('change', function() {
@@ -158,14 +175,18 @@ function report() {
         if (q6 === "option6c") {
             correct++;
             console.log("# correct " + correct); 
-            $("#correct-submitted").html(correct);
-            $("#incorrect-submitted").html(incorrect);
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
         } else {
             incorrect++;
             console.log("# incorrect " + incorrect);
-            $("#incorrect-submitted").html(incorrect);
-            $("#correct-submitted").html(correct);
-}
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
+        }
 });
 
     $('#q-7 input').on('change', function() {
@@ -175,14 +196,18 @@ function report() {
         if (q7 === "option7a") {
             correct++;
             console.log("# correct " + correct); 
-            $("#correct-submitted").html(correct);
-            $("#incorrect-submitted").html(incorrect);
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
         } else {
             incorrect++;
             console.log("# incorrect " + incorrect);
-            $("#incorrect-submitted").html(incorrect);
-            $("#correct-submitted").html(correct);
-}
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
+        }
 });
 
     $('#q-8 input').on('change', function() {
@@ -192,47 +217,138 @@ function report() {
         if (q8 === "option8c") {
             correct++;
             console.log("# correct " + correct); 
-            $("#correct-submitted").html(correct);
-            $("#incorrect-submitted").html(incorrect);
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
         } else {
             incorrect++;
             console.log("# incorrect " + incorrect);
-            $("#incorrect-submitted").html(incorrect);
-            $("#correct-submitted").html(correct);
-}
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
+        }
 });
 
-$('#q-9 input').on('change', function() {
-    var q9 = $('input[name=question9Radios]:checked', '#q-9').val(); 
-    console.log("q9 value= " + q9);
+    $('#q-9 input').on('change', function() {
+        var q9 = $('input[name=question9Radios]:checked', '#q-9').val(); 
+        console.log("q9 value= " + q9);
 
-    if (q9 === "option9d") {
-        correct++;
-        console.log("# correct " + correct); 
-        $("#correct-submitted").html(correct);
-        $("#incorrect-submitted").html(incorrect);
-    } else {
-        incorrect++;
-        console.log("# incorrect " + incorrect);
-        $("#incorrect-submitted").html(incorrect);
-        $("#correct-submitted").html(correct);
-}
+        if (q9 === "option9d") {
+            correct++;
+            console.log("# correct " + correct); 
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
+        } else {
+            incorrect++;
+            console.log("# incorrect " + incorrect);
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
+        }
 });
 
-$('#q-10 input').on('change', function() {
-    var q10 = $('input[name=question10Radios]:checked', '#q-10').val(); 
-    console.log("q10 value= " + q10);
+    $('#q-10 input').on('change', function() {
+        var q10 = $('input[name=question10Radios]:checked', '#q-10').val(); 
+        console.log("q10 value= " + q10);
 
-    if (q10 === "option10b") {
-        correct++;
-        console.log("# correct " + correct); 
-        $("#correct-submitted").html(correct);
-        $("#incorrect-submitted").html(incorrect);
-    } else {
-        incorrect++;
-        console.log("# incorrect " + incorrect);
-        $("#incorrect-submitted").html(incorrect);
-}
+        if (q10 === "option10b") {
+            correct++;
+            console.log("# correct " + correct); 
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
+        } else {
+            incorrect++;
+            console.log("# incorrect " + incorrect);
+            $("#correct").html(correct);
+            $("#incorrect").html(incorrect);
+            unanswered--;
+            $("#unanswered").html(unanswered);
+        }
 });
 
+if ("#q-1 input" !== "question1a" || "question1b" || "question1c" || "question1d") {
+    unanswered++;
+    console.log("# unanswered" + unanswered);
+    $("#unanswered").html(unanswered);
+    $("#correct").html(correct);
+    $("#incorrect").html(incorrect);
+} 
 
+if ("#q-2 input" === "question2a" || "question2b" || "question2c" || "question2d") {
+    unanswered++;
+    console.log("# unanswered" + unanswered);
+    $("#unanswered").html(unanswered);
+    $("#correct").html(correct);
+    $("#incorrect").html(incorrect);
+}
+
+if ("#q-3 input" === "question3a" || "question3b" || "question3c" || "question3d") {
+    unanswered++;
+    console.log("# unanswered" + unanswered);
+    $("#unanswered").html(unanswered);
+    $("#correct").html(correct);
+    $("#incorrect").html(incorrect);
+}
+
+if ("#q-4 input" === "question4a" || "question4b" || "question4c" || "question4d") {
+    unanswered++;
+    console.log("# unanswered" + unanswered);
+    $("#unanswered").html(unanswered);
+    $("#correct").html(correct);
+    $("#incorrect").html(incorrect);
+}
+
+if ("#q-5 input" === "question5a" || "question5b" || "question5c" || "question5d") {
+    unanswered++;
+    console.log("# unanswered" + unanswered);
+    $("#unanswered").html(unanswered);
+    $("#correct").html(correct);
+    $("#incorrect").html(incorrect);
+}
+
+if ("#q-6 input" === "question6a" || "question6b" || "question6c" || "question6d") {
+    unanswered++;
+    console.log("# unanswered" + unanswered);
+    $("#unanswered").html(unanswered);
+    $("#correct").html(correct);
+    $("#incorrect").html(incorrect);
+}
+
+if ("#q-7 input" === "question7a" || "question7b" || "question7c" || "question7d") {
+    unanswered++;
+    console.log("# unanswered" + unanswered);
+    $("#unanswered").html(unanswered);
+    $("#correct").html(correct);
+    $("#incorrect").html(incorrect);
+}
+
+if ("#q-8 input" === "question8a" || "question8b" || "question8c" || "question8d") {
+    unanswered++;
+    console.log("# unanswered" + unanswered);
+    $("#unanswered").html(unanswered);
+    $("#correct").html(correct);
+    $("#incorrect").html(incorrect);
+}
+
+if ("#q-9 input" === "question9a" || "question9b" || "question9c" || "question9d") {
+    unanswered++;
+    console.log("# unanswered" + unanswered);
+    $("#unanswered").html(unanswered);
+    $("#correct").html(correct);
+    $("#incorrect").html(incorrect);
+}
+
+if ("#q-10 input" === "question10a" || "question10b" || "question10c" || "question10d") {
+    unanswered++;
+    console.log("# unanswered" + unanswered);
+    $("#unanswered").html(unanswered);
+    $("#correct").html(correct);
+    $("#incorrect").html(incorrect);
+}
