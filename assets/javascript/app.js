@@ -7,7 +7,7 @@ window.onload = function() {
 };
 
 var intervalId;
-var time = 10;
+var time = 120;
 
 function start() {
     $("#questions").show();
