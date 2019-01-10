@@ -365,15 +365,15 @@ if ("#q-10 input" === "question10a" || "question10b" || "question10c" || "questi
 }
 
 
-function reset() {
-    correct = 0;
-    incorrect = 0;
-    unanswered = 0;
-    q1,q2,q3,q4,q5,q6,q7,q8,q9,q10 = "";
+// function reset() {
+//     correct = 0;
+//     incorrect = 0;
+//     unanswered = 0;
+    
 
 
-    $("#questions").hide();
-    $("#user-report").hide();
-    $("#instructions").show();
-    $(".timer").html("Time Remaining: " + " 02:00");
-}
+//     $("#questions").hide();
+//     $("#user-report").hide();
+//     $("#instructions").show();
+//     $(".timer").html("Time Remaining: " + " 02:00");
+// }
