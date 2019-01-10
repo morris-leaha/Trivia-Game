@@ -30,30 +30,18 @@
         <div class="row">
             <div class="col">
                 <div class="card">
-                    <div class="card-body">
-                        <h5>Introduction:</h5>
-                        <p>This fun trivia game was designed to be a beginner level quiz that will test your basic knowledge in the wondrous world of wine.</p>
-                        <h5>Intructions:</h5>
+                    <div class="card-body intro">
+                        <h4>Introduction:</h4>
+                        <p>This trivia game was designed to be an entry level, quick, quiz that will test your fundamental wine knowledge!</p>
+                        <h4>Instructions:</h4>
                         <ul>
                             <li><p>There are 10 questions</p></li>
                             <li><p>You will get 2 minutes to answer all 10 questions</p></li>
                                 <ul>
-                                    <li><p>If you do not answer all the questions within the time allotted, the quiz will stop automatically and will reveal:
-                                        <ol>
-                                            <li><p>The number of correct answers</p></li>
-                                            <li><p>The number of incorrect answers</p></li>
-                                            <li><p>The number of unanswered questions</p></li>
-                                        </ol>
+                                    <li><p>If you do not answer all the questions within the time allotted, the quiz will stop automatically and reveal your results</p></li>
+                                    <li><p>If you do answer all the questions within the time allotted, press the submit button to reveal your results</p></li>
                                 </ul>
-                                <ul>
-                                    <li><p>If you answer all the questions within the time allotted, press the submit button to reveal:</p></li>
-                                        <ol>
-                                            <li><p>The number of correct answers</p></li>
-                                            <li><p>The number of incorrect answers</p></li>
-                                            <li><p>The number of unanswered questions</p></li>
-                                        </ol>
-                                </ul>
-                            <li><p>Press the start button below when you're ready to begin!</p></li>
+                            <li><p>Press the <u>start</u> button below when you're ready to begin!</p></li>
                         </ul>
                     </div>
                 </div>
@@ -72,7 +60,7 @@
 
         <div id="Q1" class="row">
             <div class="col">
-                <div class="card">
+                <div class="card question">
                     <h6 class="card-header">Question #1:</h6>
                         <div class="card-body">
                             <h5 class="card-text">Wine is made through what process?</h5>
@@ -109,7 +97,7 @@
 
         <div id="Q2" class="row">
             <div class="col">
-                <div class="card">
+                <div class="card question">
                     <h6 class="card-header">Question #2:</h6>
                         <div class="card-body">
                             <h5 class="card-text">Which pair are byproducts of wine fermentation?</h5>
@@ -146,7 +134,7 @@
 
         <div id="Q3" class="row">
             <div class="col">
-                <div class="card">
+                <div class="card question">
                     <h6 class="card-header">Question #3:</h6>
                         <div class="card-body">
                             <h5 class="card-text">What country is generally acknowledged to be the birthplace of wine?</h5>
@@ -183,7 +171,7 @@
 
         <div id="Q4" class="row">
             <div class="col">
-                <div class="card">
+                <div class="card question">
                     <h6 class="card-header">Question #4:</h6>
                         <div class="card-body">
                             <h5 class="card-text">Terroir is defined as the set of all environmental factors, specific to a region, that have an effect on the end product.  What environmental factors affect wine production? </h5>
@@ -220,7 +208,7 @@
 
         <div id="Q5" class="row">
             <div class="col">
-                <div class="card">
+                <div class="card question">
                     <h6 class="card-header">Question #5:</h6>
                         <div class="card-body">
                             <h5 class="card-text">The ranking and classification of wines can be confusing and complicated because the terms possess different meanings in different locations around the world.  However, the historical region of Burgundy, France has refined the hierarchy over hundreds of years.</h5>
@@ -259,7 +247,7 @@
 
         <div id="Q6" class="row">
             <div class="col">
-                <div class="card">
+                <div class="card question">
                     <h6 class="card-header">Question #6:</h6>
                         <div class="card-body">
                             <h5 class="card-text">What is the average age of a French oak tree when harvested to use in the creation of the best French wine barrels?</h5>
@@ -296,7 +284,7 @@
 
         <div id="Q7" class="row">
             <div class="col">
-                <div class="card">
+                <div class="card question">
                     <h6 class="card-header">Question #7:</h6>
                         <div class="card-body">
                             <h5 class="card-text">In the 19th century, the ____________ epidemic destroyed most of the vineyards for wine grapes in Europe, most notably in France.</h5>
@@ -333,7 +321,7 @@
 
         <div id="Q8" class="row">
             <div class="col">
-                <div class="card">
+                <div class="card question">
                     <h6 class="card-header">Question #8:</h6>
                         <div class="card-body">
                             <h5 class="card-text">The famous French wine Chablis is made from which grape variety?</h5>
@@ -370,7 +358,7 @@
 
         <div id="Q9" class="row">
             <div class="col">
-                <div class="card">
+                <div class="card question">
                     <h6 class="card-header">Question #9:</h6>
                         <div class="card-body">
                             <h5 class="card-text">Chianti wines come from which region of Italy?</h5>
@@ -407,7 +395,7 @@
 
         <div id="Q10" class="row">
             <div class="col">
-                <div class="card">
+                <div class="card question">
                     <h6 class="card-header">Question #10:</h6>
                         <div class="card-body">
                             <h5 class="card-text">The famous white wine of Sancerre is made from which grape varietal?</h5>
@@ -453,10 +441,26 @@
         <div class="row">
             <div class="col">
                 <div class="card">
-                    <div class="card-body" >
-                        <p>Correct # of Answers:&nbsp;<span id="correct"></span></p>
-                        <p>Incorrect # of Answers:&nbsp;<span id="incorrect"></span></p>
-                        <p>Number of Unanswered Questions:&nbsp;<span id="unanswered"></span></p>
+                    <div class="card-body">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Correct # of Answers:</th>
+                                    <td id="correct"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Incorrect # of Answers:</th>
+                                    <td id="incorrect"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Unanswered # of Questions:</th>
+                                    <td id="unanswered"></td>
+                                </tr>
+                            </tbody> 
+                        </table>
+                        <div>
+                            <p id="msg"></p>
+                        </div>
                     </div>
                 </div>
             </div>

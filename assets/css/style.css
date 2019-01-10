@@ -30,6 +30,16 @@ header {
     color: rgb(73, 65, 54);
 }
 
+.intro {
+    border: 1px solid rgb(73, 65, 54); 
+}
+
+h4 {
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(73, 65, 54);
+    padding-bottom: 0.5rem;
+}
+
 .card {
     margin-bottom: 2rem;
     background-color: rgb(255, 249, 236);
@@ -37,7 +47,8 @@ header {
 }
 
 .card-header {
-    color: rgb(104, 93, 76,0.85);
+    color: rgb(73, 65, 54,0.80);
+    border-bottom: 1px solid rgb(73, 65, 54);
 }
 
 .form-check {
@@ -50,18 +61,29 @@ header {
 
 .btn {
     box-shadow: 4px 4px 6px 0 rgba(0,0,0,0.24);
+    background: rgb(81,54,110);
+    color: rgb(255, 249, 236);
 }
 
 .btn:hover {
-    opacity: 0.8;
+    background: rgb(81,54,110);
+    opacity: 0.9;
 }
 
 .btn:active {
     transform: translateY(2px);
+    background: rgb(81,54,110);
+}
+
+.table {
+    width: 50%;
+    border-right: 1px solid rgb(73, 65, 54);
+    margin: 1rem;
 }
 
 footer {
     margin-top: 4rem;
+    font-size:0.75rem;
 }
 
 @media screen and (max-width: 991px) {
