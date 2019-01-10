@@ -25,19 +25,24 @@ header {
     color: rgb(255, 249, 236);
 }
 
-.timer {
+div.timer {
     margin-bottom: 2rem;
     color: rgb(73, 65, 54);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .intro {
-    border: 1px solid rgb(73, 65, 54); 
+    border: 1px solid rgb(73, 65, 54);
+    padding: 2rem;
 }
 
 h4 {
     text-transform: uppercase;
     border-bottom: 1px solid rgb(73, 65, 54);
     padding-bottom: 0.5rem;
+    margin-bottom: 0.85rem;
 }
 
 .card {
