@@ -81,7 +81,7 @@ function report() {
 //              "option9d", 
 //              "option10b"];
 
-//     for (var i = 0; a.length < 1; i++) {
+//     for (var i = 0; i < a.length; i++) {
 //         if (userAnswer === a) {
 //             correct++;
 //             console.log("# correct " + correct); 
