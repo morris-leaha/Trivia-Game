@@ -1,6 +1,8 @@
 body {
     background: #ffffff;
-    background-image: url("../images/vintage-concrete.png");
+    background-image: url("../images/karol-kaczorek-546390-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
